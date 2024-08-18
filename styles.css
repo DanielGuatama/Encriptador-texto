@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+:root {
+    --color-fondo: #F3F5FC; 
+    --color-primario: #0A3871; 
+    --color-secundario: #FFFFFF; 
+    --color-terciario: #D8DFE8; 
+    --color-texto: #495057; 
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+/* Estilos base */
+body {
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del logo en el encabezado */
+.header_logo {
+    padding-top: 1%;
+    margin-left: 2%;
+}
+
+/* Estilos del encriptador */
+.encriptador {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    flex-grow: 1;
+    flex-direction: row; 
+}
+
+/* Estilos de la sección izquierda del encriptador */
+.encriptador_left {
+    width: 57.7%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+/* Estilos del área de texto */
+.texto {
+    width: 100%;
+    height: 400px; 
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+/* Estilos del área de ingreso de texto */
+.ingresa__texto {
+    width: 100%;
+    height: 100%; 
+    font-family: 'Inter';
+    font-size: 2rem;
+    background-color: #F3F5FC;
+    border: none;
+    resize: none;
+    outline: none;
+    color: #0A3871;
+    overflow-y: auto; 
+}
+
+/* Estilos del contenedor de botones de texto */
+.texto-boton-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 26.5%; 
+    gap: .05rem;
+}
+
+/* Estilos de la letra en minúscula */
+.letra__minuscula {
+    font-family: 'Inter';
+    font-size: 0.75rem;
+    color: #495057;
+    opacity: 0.8;
+}
+
+/* Estilos del contenedor de botones */
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Estilos del botón de encriptar */
+.en__crypt-btn, .de__crypt-btn {
+    padding: 1rem;
+    font-family: 'Inter';
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    width: 32.8%; 
+}
+
+/* Estilos del botón de encriptar */
+.en__crypt-btn {
+    background: #0A3871;
+    border-radius: 2rem;
+    color: #FFFFFF;
+}
+
+/* Estilos del botón de desencriptar */
+.de__crypt-btn {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 2rem;
+    color: #0A3871;
+}
+
+/* Estilos del rectángulo principal */
+.rectangulo {
+    width: 400px; 
+    height: 844px; 
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px; 
+    padding: 2%;
+    font-size: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+/* Estilos del texto de resultado */
+.resultado_texto {
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    margin-top: -6rem;
+    border: none;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    display: none;
+    height: auto;
+    flex-grow: 1;
+    min-height: 3rem; 
+}
+
+/* Estilos del dibujo */
+.dibujo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Estilos del botón para copiar texto */
+.boton__copiar_texto {
+    width: 90%; 
+    padding: 1rem; 
+    background: #0A3871; 
+    border-radius: 2rem; 
+    color: #FFFFFF; 
+    font-family: 'Inter';
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* Estilos del pie de página */
+.footer {
+    padding: 0.1rem 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+/* Media Queries */
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .header_logo {
+        width: 30%;
+        margin: 2% 0 0 2%;
+    }
+
+    .encriptador {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 12%;
+    }
+
+    .encriptador_ingresa_texto {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .texto-boton-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letra__minuscula {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .en__crypt-btn, .de__crypt-btn {
+        width: 100%;
+    }
+
+    .rectangulo {
+        width: 90%;
+    }
+
+    .resultado_texto {
+        height: 120px;
+    }
+
+    .dibujo {
+        width: 80%;
+    }
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 480px) {
+    .header_logo {
+        width: 40%;
+    }
+
+    .encriptador_ingresa_texto {
+        width: 100%;
+    }
+
+    .texto-boton-container {
+        gap: 0.5rem;
+    }
+
+    .letra__minuscula {
+        font-size: 0.65rem;
+    }
+
+    .en__crypt-btn, .de__crypt-btn {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .rectangulo {
+        width: 100%;
+    }
+
+    .resultado_texto {
+        height: 100px;
+    }
+
+    .dibujo {
+        width: 100%;
+    }
+}

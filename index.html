@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
+</head>
+<body>
+   <header class="header_logo">
+    <img class="logo" src="assets/Logo.png" alt="Logo de la aplicación">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador_left">
+            <div class="texto">
+            <textarea class="ingresa__texto" id="input_text" placeholder="Ingresa tu texto aquí..."></textarea>
+            </div>
+            <div class="texto-boton-container">
+                <div>
+                <p class="letra__minuscula">Solo letras minúsculas y sin acento</p>
+                </div>
+                <div class="buttons-container">
+                    <button class="en__crypt-btn" id="encrypt-btn">Encriptar</button>
+                    <button class="de__crypt-btn" id="decrypt-btn">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="rectangulo">
+            <p class="resultado__texto"></p>
+            <textarea class="resultado_texto" id="output-text" placeholder="" readonly></textarea>
+            <img class="dibujo" src="assets/dibujo.png" alt="Diagrama ilustrativo del proceso">
+            <button class="boton__copiar_texto" id="copy-btn">Copiar</button>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Daniel Guatama Murcia - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
