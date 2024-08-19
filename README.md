@@ -34,6 +34,6 @@ Este proyecto es un encriptador de texto que permite a los usuarios encriptar y 
 
 Las contribuciones son bienvenidas. Si deseas contribuir, por favor abre un issue o envía un pull request.
 
-## Licencia
+## Hecho por: Daniel Guatama Estudiante de Alura Latam y Oracle.
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
