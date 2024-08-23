@@ -283,3 +283,64 @@ body {
         margin-top: auto;
     }
 }
+
+@media (max-width: 790px) and (max-height: 490px) {
+    .header_logo {
+        width: 25%;
+        margin: 2% 0 0 2%;
+    }
+
+    .encriptador {
+        flex-direction: column;
+        align-items: center;
+        padding: 1% 5%;
+    }
+
+    .encriptador_left {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .texto {
+        height: 300px; /* Ajustado para una mejor visualización */
+    }
+
+    .texto-boton-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letra__minuscula {
+        font-size: 0.7rem;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .en__crypt-btn, .de__crypt-btn {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .rectangulo {
+        width: 90%;
+        height: auto; /* Ajusta la altura según el contenido */
+        padding: 1%;
+    }
+
+    .resultado_texto {
+        height: 100px;
+    }
+
+    .dibujo {
+        width: 70%;
+    }
+
+    .footer {
+        padding: 0.5rem 0;
+    }
+}
