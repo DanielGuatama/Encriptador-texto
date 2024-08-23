@@ -23,19 +23,20 @@ body {
 
 /* Estilos del logo en el encabezado */
 .header_logo {
-    padding-top: .5%;
+    padding-top: 2%;
     margin-left: 2%;
 }
 
 /* Estilos del encriptador */
 .encriptador {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     min-height: 65vh;
-    padding: 2% 7%;
+    padding: 1% 15%;
     flex-grow: 1;
     flex-direction: row; 
+    margin: 0 4;
 }
 
 /* Estilos de la sección izquierda del encriptador */
@@ -197,8 +198,6 @@ body {
     .encriptador {
         flex-direction: column;
         align-items: center;
-        margin: 0;
-        margin-bottom: 12%;
     }
 
     .encriptador_ingresa_texto {
